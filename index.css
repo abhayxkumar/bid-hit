@@ -22,8 +22,8 @@ html {
 .back {
   height: 100%;
   width: 100%;
-  background-image: url("./image/background.jpg");
-  background-color: black;
+  /* background-image: url("./image/background.jpg"); */
+  /* background-color: black; */
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -97,6 +97,9 @@ nav .menu-btn i {
 }
 #click {
   display: none;
+}
+#carouselExampleIndicators{
+  margin-top: 10px;
 }
 
 @media (min-width: 940px) and (max-width: 1040px) {
@@ -266,6 +269,8 @@ footer {
   border: none;
   outline: none;
   background: #aa8740;
+  margin: 20px;
+  margin-left: 0px;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
