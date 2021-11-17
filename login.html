@@ -5,56 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/login.css">
-    <title>Login Form</title>
+    <title>Bid-Hit | Login</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-   
-    
-    <div class="hero">
-       
-        <div class="form-box">
-          <div class="button-box">
-            <div id="btn"></div>
-            <button type="button" class="toggle-btn" onclick="login()"><strong>Login</strong></button>
-            <button type="button" class="toggle-btn" onclick="register()"><strong>Register</strong></button>
-          </div>
-          <div class="social-icons">
-            <img src="image/fb.svg" alt="Facebook icon">
-            <img src="image/gp.png" alt="Google icon">
-            <img src="image/tw.png" alt="Tweeter icon">
-          </div>
-          <form id="login" class="input-group">
-            <input type="text" class="input-field" placeholder="Enter User Id" required>
-            <input type="password" class="input-field" placeholder="Enter password" required>
-            <input type="checkbox" class="check-box"><span>Remember password</span>
-            <button type="submit" class="submit-btn"><strong>Log In</strong></button>
-          </form>
-          <form id="register"class="input-group">
-            <input type="text" class="input-field" placeholder="Enter User Id" required>
-            <input type="email" class="input-field" placeholder="Enter email Id" required>
-            <input type="password" class="input-field" placeholder="Enter password" required>
-            <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
-            <button type="submit" class="submit-btn"><strong>Register</strong></button>
-          </form>
-        </div>
-    
+
+  <!-- Header -->
+  <div class="back">
+    <nav>
+      <div class="logo">
+        <a href="./index.html"><img src="./image/logo.png" alt="Logo" /></a>
+        <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
       </div>
-        <script>
-          let x=document.getElementById("login");
-          let y=document.getElementById("register");
-          let z=document.getElementById("btn");
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./search.html">SEARCH AUCTION</a></li>
+        <li><a  href="tnc.html">T & C</a></li>
+        <li><a href="./aboutus.html">ABOUT US</a></li>
+        <li><a href="./contactus.html">CONTACT US</a></li>
+        <li><a class="active" href="./login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+  </div>
+   
+  <!-- Login Form -->
+  <div class="hero">
+       
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="loginn()"><strong>Login</strong></button>
+        <button type="button" class="toggle-btn" onclick="registr()"><strong>Register</strong></button>
+      </div>
+      
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="Enter User Id" required>
+        <input type="password" class="input-field" placeholder="Enter password" required>
+        <input type="checkbox" class="check-box"><span>Remember password</span>
+        <button onclick="login()" type="submit" class="submit-btn"><strong>Log In</strong></button>
+      </form>
+      <form id="register"class="input-group">
+        <input type="text" id="userid" class="input-field" placeholder="Enter User Id" required>
+        <input type="email" id="email" class="input-field" placeholder="Enter email Id" required>
+        <input type="password" id="password" class="input-field" placeholder="Enter password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
+        <button onclick="register()" type="submit" class="submit-btn"><strong>Register</strong></button>
+      </form>
+    </div>
+
+  </div>
+  <script>
+    let x = document.getElementById("login");
+    let y = document.getElementById("register");
+    let z = document.getElementById("btn");
+
+    function registr() {
+      x.style.left = "-400px"
+      y.style.left = "50px"
+      z.style.left = "111px"
+    }
+
+    function loginn() {
+      x.style.left = "50px"
+      y.style.left = "450px"
+      z.style.left = "0"
+    }
+
+  </script>
+  
     
-          function register(){
-            x.style.left = "-400px"
-            y.style.left = "50px"
-            z.style.left = "111px"
-          }
-    
-          function login(){
-            x.style.left = "50px"
-            y.style.left = "450px"
-            z.style.left = "0"
-          }
-        </script>
 </body>
 </html>
