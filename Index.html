@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bid-Hit | Home Page</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
 
-    </head>
-    <body>
-        <script src="index.js"></script>
-    </body>
+    <!-- Header -->
+    <div class="back">
+      <nav>
+        <div class="logo">
+          <a href="./index.html"><img src="./image/logo.png" alt="Logo"/></a>
+          <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="./index.html">HOME</a></li>
+          <li><a href="./search.html">SEARCH AUCTION</a></li>
+          <li><a href="tnc.html">T & C</a></li>
+          <li><a href="./aboutus.html">ABOUT US</a></li>
+          <li><a href="./contactus.html">CONTACT US</a></li>
+          <li><a href="./login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+
+      <!-- Footer -->
+      <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2 id="aboutus">Social Links</h2>
+            <div class="content">
+              <div class="social">
+                <a href="https://facebook.com"
+                  ><span class="fab fa-facebook-f text"></span
+                ></a>
+                <a href="https://twitter.com"
+                  ><span class="fab fa-twitter text"></span
+                ></a>
+                <a href="https://instagram.com"
+                  ><span class="fab fa-instagram text"></span
+                ></a>
+                <a href="https://youtube.com"
+                  ><span class="fab fa-youtube text"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="center box">
+              <h2>Address</h2>
+              <div id="contactus" class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker-alt btn"></span>
+                  <span class="text"></span>
+                </div>
+                <div class="phone">
+                  <span class="fas fa-phone-alt btn"></span>
+                  <span class="text"></span>
+                </div>
+                <div class="email">
+                  <span class="fas fa-envelope btn"></span>
+                  <span class="text"></span>
+                </div>
+              </div>
+            </div> -->
+          <div class="right box">
+            <h2>Contact us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Your Email *</div>
+                  <input type="email" required />
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+                <div class="btn">
+                  <button class="text" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <center>
+            <span class="far fa-copyright"></span
+            ><span> 2021 All rights reserved.</span>
+          </center>
+        </div>
+      </footer>
+    </div>
+
+  </body>
 </html>
