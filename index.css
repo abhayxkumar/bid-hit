@@ -83,7 +83,7 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
   padding: 8px 10px;
@@ -107,6 +107,58 @@ nav .menu-btn i {
 }
 #carouselExampleIndicators{
   /* margin-top: 10px; */
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+.box1{
+  height: 350px;
+  width: 40%;
+  background-color: rgb(170, 135, 64);
+}
+.box1 h2{
+  padding: 30px;
+  color: black;
+  text-align: center;
+}
+.box1 button{
+  background-color: black;
+  color: white;
+  margin-left: 160px;
+  position: absolute;
+  top: 250px;
+  padding: 10px;
+}
+.box1 button:hover{
+  background-color: goldenrod;
+  transition: .3s;
+}
+.box2{
+  height: 350px;
+  width: 40%;
+  background-color: rgb(170, 135, 64);
+}
+.box2 h2{
+  padding: 30px;
+  color: black;
+  text-align: center;
+}
+.box2 button{
+  background-color: black;
+  color: white;
+  margin-left: 160px;
+  position: absolute;
+  top: 250px;
+  padding: 10px;
+}
+.box2 button:hover{
+  background-color: goldenrod;
+  transition: .3s;
 }
 
 @media (min-width: 940px) and (max-width: 1040px) {
