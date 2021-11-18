@@ -111,10 +111,10 @@ nav .menu-btn i {
 .container{
   display: flex;
   justify-content: space-around;
-  align-items: center;
   position: relative;
   height: 350px;
   width: 100%;
+  border-bottom: 2px solid #aa8740;
 }
 .box1{
   height: 350px;
@@ -159,6 +159,33 @@ nav .menu-btn i {
 .box2 button:hover{
   background-color: goldenrod;
   transition: .3s;
+}
+.container2{
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+#article1{
+  height: 300px;
+  width: 20%;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 30px;
+}
+#article2{
+  height: 300px;
+  width: 20%;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 170px;
+}
+#article3{
+  height: 300px;
+  width: 20%;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 30px;
 }
 
 @media (min-width: 940px) and (max-width: 1040px) {
