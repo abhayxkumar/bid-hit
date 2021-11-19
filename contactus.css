@@ -52,7 +52,7 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
   padding: 8px 10px;
@@ -62,7 +62,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: rgb(170, 135, 64);
+  color: rgb(170, 135, 64) !important;
 }
 
 nav .menu-btn i {
