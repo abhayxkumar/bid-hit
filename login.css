@@ -133,17 +133,14 @@ nav {
   /* Login */
 
 .hero{
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("image/login\ background.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("image/background.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
-   justify-content: center;
-   align-items: center;
-    
+    justify-content: center;
+    align-items: center;
 }
 .form-box{
     width: 380px;
@@ -178,6 +175,7 @@ nav {
     border: 0;
     outline: none;
     position: relative;
+    color: white;
 }
  #btn{
     top: 0;
@@ -185,7 +183,7 @@ nav {
     position: absolute;
     width: 110px;
     height: 100%;
-    background: linear-gradient(to right,#aa8740,#e3d7bd);
+    background: #aa8740;
     border-radius: 30px;
     transition: 0.5s;
 }
@@ -215,6 +213,7 @@ nav {
     border-bottom: 1px solid #999;
     background: transparent;
     outline:none;
+    color: white;
 }
 .submit-btn{
     width: 85%;
@@ -222,10 +221,11 @@ nav {
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right,#aa8740,#e3d7bd);
+    background: #aa8740;
     border-radius: 30px;
     border: 0;
     outline: none;
+    color: white;
 }
 .check-box{
     margin:30px 10px 30px 0;
@@ -245,4 +245,135 @@ span{
 }
 ::placeholder{
     color: grey;
+}
+
+/* Footer */
+
+footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff !important;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #aa8740;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #aa8740;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #aa8740;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #e3d7bd;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 0 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #aa8740;
+}
+footer .bottom{
+  width: 100%;
+  text-align: center;
+  color: #d9d9d9;
+  padding: 20px 0 10px 0;
+}
+footer .bottom a{
+  color: #aa8740;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #aa8740 !important;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
 }
