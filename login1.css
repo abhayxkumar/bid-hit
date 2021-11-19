@@ -1,3 +1,4 @@
+/* header */
 *,
 *:before,
 *:after{
@@ -132,7 +133,6 @@ nav {
     }
   }
 
-/* SignUp */
 
 .background{
     width: 430px;
