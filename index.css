@@ -194,6 +194,7 @@ nav .menu-btn i {
   display: flex;
   justify-content: space-around;
   background-color: black;
+  border-bottom: 2px solid #aa8740;
 }
 #article1{
   height: 300px;
@@ -216,7 +217,30 @@ nav .menu-btn i {
   background-color: white;
   margin-top: 30px;
 }
-
+.subscribe{
+  height: 200px;
+  background-color: black;
+  border-bottom: 2px solid #aa8740;
+}
+.subscribe h2{
+  padding: 20px;
+}
+.email{
+  width: 40%;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+#btn{
+  background-color: goldenrod;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+}
+#btn:hover{
+  background-color: grey;
+  transition: .3s;
+}
 @media (min-width: 940px) and (max-width: 1040px) {
   nav ul li a {
     font-size: 9px;
