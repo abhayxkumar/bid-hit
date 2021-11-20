@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="form1.js"></script>
     <title>Bid-Hit | Sign Up</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
@@ -41,19 +44,22 @@
     </nav>
   </div>
 
-    <!-- Sign Up -->
-    <div class="signup-container">
-        <div class="signup-form">
-            <h1>Sign Up</h1>
-            <form>
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <input type="submit" id="signup" value="Sign Up">
-            </form>
-            <p>Already have an account? <a href="./login.html">Login</a></p>
+  <!-- SignUp -->
+
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+        <div class="input-group">
+            <h3>Sign Up Here</h3>
+            <label for="username">Email Address</label>
+        <input type="email"  class="input-field" placeholder="Enter Email Address" id="email"><br>
+        <label for="password">Password</label>
+        <input type="password"  class="input-field" placeholder="Enter Password" id="password"><br>
+        <button onclick="signUp()" class="submit-btn" id="signUp">Sign Up</button><br>
+        <button onclick="signIn()" class="submit-btn" id="signIp">Sign In</button><br>
+        <button onclick="signOut()"  id="signOut">SignOut</button>
         </div>
-    </div>
 
     <!-- Footer -->
     <footer>
@@ -127,6 +133,7 @@
         const analytics = getAnalytics(app);
         const auth = getAuth(app);
 
-      </script>
+    </script>
+    
 </body>
 </html>

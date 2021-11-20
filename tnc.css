@@ -129,6 +129,17 @@ nav {
       display: block;
     }
   }
+main pre{
+  color: rgb(197, 194, 174);
+}
+main h2,h3{
+  color: #aa8740;
+}
+#name{
+  color: white;
+}
+#id{}
+#id{}
 
   /* Footer */
 

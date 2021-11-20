@@ -3,138 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Bid-Hit | Login</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="form1.js"></script>
+<link rel="stylesheet" href="login.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <title>Login System</title>
 </head>
 <body>
-
-  <!-- Header -->
-  <div class="back">
-    <nav>
-      <div class="logo">
-        <a href="./index.html"><img src="./image/logo.png" alt="Logo" /></a>
-        <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
-      </div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./search.html">SEARCH AUCTION</a></li>
-        <li><a  href="tnc.html">T & C</a></li>
-        <li><a href="./aboutus.html">ABOUT US</a></li>
-        <li><a href="./contactus.html">CONTACT US</a></li>
-        <li><a class="active" href="./login.html">LOGIN</a></li>
-      </ul>
-    </nav>
-  </div>
-   
-  <!-- Login Form -->
-  <div class="hero">
-       
-    <div class="form-box">
-      <div class="button-box">
-        <div id="btn"></div>
-        <button type="button" class="toggle-btn" onclick="loginn()"><strong>Login</strong></button>
-        <button type="button" class="toggle-btn" onclick="registr()"><strong>Register</strong></button>
-      </div>
-      
-      <form id="login" class="input-group">
-        <input type="text" class="input-field" placeholder="Enter User Id" required>
-        <input type="password" class="input-field" placeholder="Enter password" required>
-        <input type="checkbox" class="check-box"><span>Remember password</span>
-        <button onclick="login()" type="submit" class="submit-btn"><strong>Log In</strong></button>
-      </form>
-      <form id="register"class="input-group">
-        <input type="text" id="userid" class="input-field" placeholder="Enter User Id" required>
-        <input type="email" id="email" class="input-field" placeholder="Enter email Id" required>
-        <input type="password" id="password" class="input-field" placeholder="Enter password" required>
-        <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
-        <button onclick="register()" type="submit" class="submit-btn"><strong>Register</strong></button>
-      </form>
-    </div>
-
-    
-
-  </div>
-
-   <!-- Footer -->
-   <footer>
-    <div class="content">
-      <div class="left box">
-        <div class="upper">
-          <div class="topic">About us</div>
-          <p>Bid-Hit is a website that provides you with the best auction
-            platform. We are a team of young and enthusiastic
-            people who are dedicated to providing you with the best
-            experience.
-          </p>
-        </div>
-        <div class="lower">
-          <div class="topic">Contact us</div>
-          <div class="phone">
-            <a href="#"><i class="fas fa-phone-volume"></i>+91 XXXXXXXXXX</a>
+    <!-- header -->
+    <div class="back">
+        <nav>
+          <div class="logo">
+            <a href="./index.html"><img src="./image/logo.png" alt="Logo" /></a>
+            <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
           </div>
-          <div class="email">
-            <a href="mailto:bidhit@gmail.com"><i class="fas fa-envelope"></i>bidhit@gmail.com</a>
-          </div>
-        </div>
+          <input type="checkbox" id="click" />
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./search.html">SEARCH AUCTION</a></li>
+            <li><a  href="tnc.html">T & C</a></li>
+            <li><a href="./aboutus.html">ABOUT US</a></li>
+            <li><a href="./contactus.html">CONTACT US</a></li>
+            <li><a class="active" href="./login.html">LOGIN</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="middle box">
-        <div class="topic">Discover</div>
-        <div><a href="./aboutus.html">About Us</a></div>
-        <div><a href="./contactus.html">Contact Us</a></div>
-        <div><a href="./products.html">Products</a></div>
-        <div><a href="./search.html">Search Auction</a></div>
-        <div><a href="./tnc.html">T & C</a></div>
-        <div><a href="./login.html">Login</a></div>
-      </div>
-      <div class="right box">
-        <div class="topic">Social Media</div>
-          <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-      </div>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-    <div class="bottom">
-      <p>Copyright © 2021 <a href="#">Bid-Hit</a> All rights reserved</p>
-    </div>
-  </footer>
-  <script>
-    let x = document.getElementById("login");
-    let y = document.getElementById("register");
-    let z = document.getElementById("btn");
+            <div class="input-group">
+                <h3>Login Here</h3>
+                <label for="username">Email Address</label>
+            <input type="email"  class="input-field" placeholder="Enter Email Address" id="email"><br>
+            <label for="password">Password</label>
+            <input type="password"  class="input-field" placeholder="Enter Password" id="password"><br>
+            <button onclick="signUp()" class="submit-btn" id="signUp">Sign Up</button><br>
+            <button onclick="signIn()" class="submit-btn" id="signIp">Sign In</button><br>
+            <button onclick="signOut()"  id="signOut">SignOut</button>
+            </div>
 
-    function registr() {
-      x.style.left = "-400px"
-      y.style.left = "50px"
-      z.style.left = "111px"
-    }
 
-    function loginn() {
-      x.style.left = "50px"
-      y.style.left = "450px"
-      z.style.left = "0"
-    }
-
-  </script>
-  
     
 </body>
 </html>
