@@ -20,20 +20,26 @@
     var password = document.getElementById("password");
 
     const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
-    //
-    promise.catch(e=>alert(e.message));
-    alert("SignUp Successfully");
-    window.location.replace("./login.html");
+    
+    if(email=!null && password!=null){
+      promise.catch(e => alert("Fill Email and Password first"));
+    }
+    else{
+      promise.catch(e=>alert(e.message));
+      alert("SignUp Successfully");
+      window.location.replace("./login.html");
+    }
+    
   }
 
-  //signIN function
-  // function  signIn(){
-  //   var email = document.getElementById("email");
-  //   var password  = document.getElementById("password");
-  //   const promise = auth.signInWithEmailAndPassword(email.value,password.value);
-  //   promise.catch(e=>alert(e.message));
+  // signIN function
+  function  signIn(){
+    var email = document.getElementById("email");
+    var password  = document.getElementById("password");
+    const promise = auth.signInWithEmailAndPassword(email.value,password.value);
+    promise.catch(e=>alert(e.message));
     
-  // }
+  }
 
 
   //signOut
