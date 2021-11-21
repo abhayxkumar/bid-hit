@@ -355,3 +355,22 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+.chk{
+  display: inline-block;
+  float: left;
+  margin-right: 230px;
+  padding: 10px;
+}
+#chk{
+  height: fit-content;
+}
+#tc{
+  color: blue;
+  text-decoration: underline;
+}
+/* .chk a:hover{
+  color: blue;
+} */
+#tc a:hover{
+  color: blue;
+}

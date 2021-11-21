@@ -15,25 +15,26 @@
   const auth =  firebase.auth();
 
   //signup function
-  function signUp(){
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
+//   function signUp(){
+//     var email = document.getElementById("email");
+//     var password = document.getElementById("password");
 
-    const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
-    //
-    promise.catch(e=>alert(e.message));
-    alert("SignUp Successfully");
-    window.location.replace("./login.html");
-  }
+//     const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
+//     //
+//     promise.catch(e=>alert(e.message));
+//     alert("SignUp Successfully");
+//     window.location.replace("./index.html");
+//   }
 
   //signIN function
-  // function  signIn(){
-  //   var email = document.getElementById("email");
-  //   var password  = document.getElementById("password");
-  //   const promise = auth.signInWithEmailAndPassword(email.value,password.value);
-  //   promise.catch(e=>alert(e.message));
+  function  signIn(){
+    var email = document.getElementById("email");
+    var password  = document.getElementById("password");
+    const promise = auth.signInWithEmailAndPassword(email.value,password.value);
+    promise.catch(e=>alert(e.message));
+    // window.location.replace("./index.html");
     
-  // }
+  }
 
 
   //signOut

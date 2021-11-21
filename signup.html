@@ -53,15 +53,20 @@
         <div class="input-group">
             <h3>Sign Up Here</h3>
             <label for="username">Email Address</label>
-        <input type="email"  class="input-field" placeholder="Enter Email Address" id="email"><br>
-        <label for="password">Password</label>
-        <input type="password"  class="input-field" placeholder="Enter Password" id="password"><br>
+        <input type="email"  class="input-field" placeholder="Enter Email Address" id="email" required><br>
+        <label for="password" >Password</label>
+        <input type="password"  class="input-field" placeholder="Enter Password" id="password" required><br>
         <button onclick="signUp()" class="submit-btn" id="signUp">Sign Up</button><br>
-        <button onclick="signIn()" class="submit-btn" id="signIp">Sign In</button><br>
-        <button onclick="signOut()"  id="signOut">SignOut</button>
+        <button onclick="window.location.href='./login.html'" class="submit-btn" id="signIp">Sign In</button><br>
+        <div class="chk"> 
+          
+          <input type="checkbox" required id="chk">&nbsp;
+          <a href="./tnc.html" id="tc">Terms & Conditions</a>
         </div>
-
-    <!-- Footer -->
+        <!-- <button onclick="signOut()"  id="signOut">SignOut</button> -->
+        </div>
+      
+     <!-- Footer -->
     <footer>
       <div class="content">
         <div class="left box">
@@ -106,7 +111,7 @@
       <div class="bottom">
         <p>Copyright © 2021 <a href="#">Bid-Hit</a> All rights reserved</p>
       </div>
-    </footer>
+    </footer> 
 
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -134,6 +139,7 @@
         const auth = getAuth(app);
 
     </script>
+  
     
 </body>
 </html>

@@ -7,7 +7,7 @@
 
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-<script src="form1.js"></script>
+<script src="form2.js"></script>
 <link rel="stylesheet" href="login.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
@@ -49,12 +49,14 @@
             <div class="input-group">
                 <h3>Login Here</h3>
                 <label for="username">Email Address</label>
-            <input type="email"  class="input-field" placeholder="Enter Email Address" id="email"><br>
+            <input type="email"  class="input-field" placeholder="Enter Email Address" id="email" required><br>
             <label for="password">Password</label>
-            <input type="password"  class="input-field" placeholder="Enter Password" id="password"><br>
-            <button onclick="signUp()" class="submit-btn" id="signUp">Sign Up</button><br>
+            <input type="password"  class="input-field" placeholder="Enter Password" id="password" required><br>
             <button onclick="signIn()" class="submit-btn" id="signIp">Sign In</button><br>
-            <button onclick="signOut()"  id="signOut">SignOut</button>
+            <button onclick="window.location.href='./signup.html'" class="submit-btn" id="signUp">Sign Up</button><br>
+            
+          
+            <!-- <button onclick="signOut()"  id="signOut">SignOut</button> -->
             </div>
 
 
