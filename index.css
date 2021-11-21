@@ -226,7 +226,7 @@ nav .menu-btn i {
   padding: 20px;
 }
 .email{
-  width: 40%;
+  width: 30%;
   margin-left: 20px;
   border-radius: 10px;
   padding: 10px;
@@ -239,6 +239,15 @@ nav .menu-btn i {
 }
 #btn:hover{
   background-color: grey;
+  transition: .3s;
+}
+.reviews{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+.reviews:hover{
+  background-color: green;
   transition: .3s;
 }
 @media (min-width: 940px) and (max-width: 1040px) {
