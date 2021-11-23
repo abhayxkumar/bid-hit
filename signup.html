@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-<script src="form1.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="form1.js"></script>
     <title>Bid-Hit | Sign Up</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
@@ -58,44 +58,12 @@
         <input type="password"  class="input-field" placeholder="Enter Password" id="password" required><br>
         <button onclick="signUp()" class="submit-btn" id="signUp">Sign Up</button><br>
         <button onclick="window.location.href='./login.html'" class="submit-btn" id="signIp">Sign In</button><br>
-      
         <div class="chk"> 
-          
           <input type="checkbox" required id="chk">&nbsp;
           <a href="./tnc.html" id="tc">Terms & Conditions</a>
         </div>
         <!-- <button onclick="signOut()"  id="signOut">SignOut</button> -->
         </div>
-      
-    
-
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyApfOdNqlS_Lam6Y26LdUVzU5rZqCx2e2c",
-          authDomain: "bid-hit-86b43.firebaseapp.com",
-          projectId: "bid-hit-86b43",
-          storageBucket: "bid-hit-86b43.appspot.com",
-          messagingSenderId: "1075508565419",
-          appId: "1:1075508565419:web:66cb1ed6e1369c5c3ceeee",
-          measurementId: "G-VZW1T02SXR"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        const auth = getAuth(app);
-
-    </script>
-  
-    
+        
 </body>
 </html>
