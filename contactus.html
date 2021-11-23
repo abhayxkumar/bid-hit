@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <!-- Header -->
 <nav>
     <div class="logo">
         <a href="./index.html"><img src="./image/logo.png" alt="Logo"></a>
@@ -35,6 +36,7 @@
     </ul>
   </nav>
 
+  <!-- Contact Form -->
   <div class="main-container">
     <section id="contactus" class="text-gray-700 body-font relative contact">
         <div class="container px-5 py-24 mx-auto">
@@ -54,7 +56,7 @@
                         <textarea class="inpt w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-purple-500 text-base px-4 py-2 resize-none block" placeholder="Message" id="message"></textarea>
                     </div>
                     <div class="p-2 w-full">
-                        <button class="btn flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Submit</button>
+                        <button class="btn flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg" id="submit">Submit</button>
                     </div>
                 </div>
             </div>
@@ -109,6 +111,65 @@
       <p class="copyright">Copyright © 2021 <a href="#">Bid-Hit</a> All rights reserved</p>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCwcXkAZoIfiQfc7iqAFpoa3-a5_cElLHg",
+      authDomain: "loginweb-34cad.firebaseapp.com",
+      databaseURL: "https://loginweb-34cad-default-rtdb.firebaseio.com",
+      projectId: "loginweb-34cad",
+      storageBucket: "loginweb-34cad.appspot.com",
+      messagingSenderId: "178607050995",
+      appId: "1:178607050995:web:0071ffb26a6c5e54236786",
+      measurementId: "G-K3XZRNGCK7"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    import { getDatabase, ref, set, child, update, remove } 
+    from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
+
+    const db = getDatabase();
+
+    // Get a reference to the database service
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var message = document.getElementById("message");
+
+    var submit = document.getElementById("submit");
+
+    // Insert Data Function
+
+    function insertData() {
+      set(ref(db, "Contact Us"+ "/" + name.value), {
+        Name: name.value,
+        Email: email.value,
+        Message: message.value
+      })
+      .then(()=>{
+        alert("Your message is sent to us!");
+      })
+      .catch(error=>{
+        alert("Error: " + error);
+      });
+    }
+
+    // Assign Event Listener to the Submit Button
+    submit.addEventListener("click", insertData);
+    
+
+  </script>
 
 </body>
 </html>
