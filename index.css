@@ -325,7 +325,7 @@ footer{
   position: relative;
   bottom: 0;
   left: 0;
-  background: #111;
+  /* background: #111; */
 }
 footer .content{
   max-width: 1350px;

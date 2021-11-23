@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
     <script src="form1.js"></script>
@@ -16,54 +16,71 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
-  <div class="back">
-    <nav>
-      <div class="logo">
-        <a href="./index.html"><img src="./image/logo.png" alt="Logo" /></a>
-        <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
+    <div class="back">
+      <nav>
+        <div class="logo">
+          <a href="./index.html"><img src="./image/logo.png" alt="Logo" /></a>
+          <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./search.html">SEARCH AUCTION</a></li>
+          <li><a href="tnc.html">T & C</a></li>
+          <li><a href="./aboutus.html">ABOUT US</a></li>
+          <li><a href="./contactus.html">CONTACT US</a></li>
+          <li><a class="active" href="./login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- SignUp -->
+
+    <div class="background"></div>
+    <div class="input-group">
+      <h3>Sign Up Here</h3>
+      <label for="username">Email Address</label>
+      <input
+        type="email"
+        class="input-field"
+        placeholder="Enter Email Address"
+        id="email"
+        required
+      /><br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="input-field"
+        placeholder="Enter Password"
+        id="password"
+        required
+      /><br />
+      <div class="chk">
+        <input type="checkbox" required id="chk" />&nbsp;
+        <a href="./tnc.html" id="tc">Terms & Conditions</a>
       </div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./search.html">SEARCH AUCTION</a></li>
-        <li><a  href="tnc.html">T & C</a></li>
-        <li><a href="./aboutus.html">ABOUT US</a></li>
-        <li><a href="./contactus.html">CONTACT US</a></li>
-        <li><a class="active" href="./login.html">LOGIN</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <!-- SignUp -->
-
-  <div class="background">
-    <div class="shape"></div>
-    <div class="shape"></div>
-</div>
-        <div class="input-group">
-            <h3>Sign Up Here</h3>
-            <label for="username">Email Address</label>
-        <input type="email"  class="input-field" placeholder="Enter Email Address" id="email" required><br>
-        <label for="password" >Password</label>
-        <input type="password"  class="input-field" placeholder="Enter Password" id="password" required><br>
-        <button onclick="signUp()" class="submit-btn" id="signUp">Sign Up</button><br>
-        <button onclick="window.location.href='./login.html'" class="submit-btn" id="signIp">Sign In</button><br>
-        <div class="chk"> 
-          <input type="checkbox" required id="chk">&nbsp;
-          <a href="./tnc.html" id="tc">Terms & Conditions</a>
-        </div>
-        <!-- <button onclick="signOut()"  id="signOut">SignOut</button> -->
-        </div>
-        
-</body>
+      <button onclick="signUp()" class="submit-btn" id="signUp">Sign Up</button
+      ><br />
+      <button
+        onclick="window.location.href='./login.html'"
+        class="submit-btn"
+        id="signIn"
+      >
+        Sign In</button
+      ><br />
+      <!-- <button onclick="signOut()"  id="signOut">SignOut</button> -->
+    </div>
+  </body>
 </html>

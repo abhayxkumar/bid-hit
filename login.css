@@ -10,7 +10,9 @@
   }
 
   body {
-    background-color: black;
+    background-image: url(./image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
  
 nav {
@@ -134,7 +136,7 @@ nav {
   }
 
 
-.background{
+/* .background{
     width: 430px;
     height: 520px;
     position: absolute;
@@ -164,20 +166,20 @@ nav {
     );
     right: -30px;
     bottom: -80px;
-}
+} */
 .input-group{
-    height: 520px;
-    width: 400px;
-    background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 70%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 20px 35px;
+  height: 490px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 60%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 20px 35px;
 }
 .input-group *{
     color: #ffffff;
@@ -223,4 +225,12 @@ button{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+}
+#signUp{
+  margin-top: 30px;
+  width: 80px;
+  height: 40px;
+  padding: 0px;
+  float: right;
+  background-color: white;
 }
