@@ -129,21 +129,20 @@ nav .menu-btn i {
   }
 }
 main {
-  border-bottom: 1px solid #aa8740;
+  margin: 50px 110px;
 }
-main pre {
-  color: rgb(197, 194, 174);
+main, p {
+  color: #e3d7bd;
+  text-align: justify;
 }
 main h2,
 h3 {
   color: #aa8740;
+  letter-spacing: 2px;
 }
-#name {
-  color: white;
-}
-#id {
-}
-#id {
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 /* Footer */
