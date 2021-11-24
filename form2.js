@@ -32,10 +32,15 @@
     var password  = document.getElementById("password");
     const promise = auth.signInWithEmailAndPassword(email.value,password.value);
     promise.catch(e=>alert(e.message));
+    // return 1;
     window.location.replace("./index.html");
     
   }
-
+  // var one = signIn();
+  // if(one==1){
+  //   window.location.replace("./index.html");
+  // }
+  
 
   //signOut
 
