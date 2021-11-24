@@ -72,7 +72,6 @@ nav {
 
 nav .logo {
   margin-right: 30px;
-  
 }
 nav .logo img {
   height: 80px;
@@ -111,7 +110,7 @@ nav .menu-btn i {
 #click {
   display: none;
 }
-.container{
+.container {
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -120,17 +119,17 @@ nav .menu-btn i {
   margin-bottom: 30px;
   width: 100%;
 }
-.box1{
+.box1 {
   height: 350px;
   width: 40%;
   background-color: rgb(170, 135, 64);
 }
-.box1 h2{
+.box1 h2 {
   padding: 30px;
   color: black;
   text-align: center;
 }
-.box1 button{
+.box1 button {
   background-color: black;
   color: white;
   margin-left: 160px;
@@ -138,21 +137,21 @@ nav .menu-btn i {
   top: 250px;
   padding: 10px;
 }
-.box1 button:hover{
+.box1 button:hover {
   background-color: goldenrod;
-  transition: .3s;
+  transition: 0.3s;
 }
-.box2{
+.box2 {
   height: 350px;
   width: 40%;
   background-color: rgb(170, 135, 64);
 }
-.box2 h2{
+.box2 h2 {
   padding: 30px;
   color: black;
   text-align: center;
 }
-.box2 button{
+.box2 button {
   background-color: black;
   color: white;
   margin-left: 160px;
@@ -160,26 +159,26 @@ nav .menu-btn i {
   top: 250px;
   padding: 10px;
 }
-.box2 button:hover{
+.box2 button:hover {
   background-color: goldenrod;
-  transition: .3s;
+  transition: 0.3s;
 }
-.container1{
+.container1 {
   height: auto;
   background-color: black;
   border-bottom: 1px solid #aa8740;
 }
-.container1 h2{
+.container1 h2 {
   text-align: center;
   margin-top: 100px;
   font-size: 3.5rem;
 }
-.left{
+.left {
   width: 55%;
   float: left;
   background-color: black;
 }
-.left ul{
+.left ul {
   margin-top: 70px;
   margin-left: 25px;
 }
@@ -189,15 +188,15 @@ nav .menu-btn i {
   color: white;
   font-weight: 300;
 }
-.right{
+.right {
   width: 45%;
   float: right;
   background-color: black;
 }
-.review p{
+.review p {
   text-align: justify;
 }
-.container2{
+.container2 {
   padding-top: 40px;
   height: auto;
   display: flex;
@@ -205,37 +204,37 @@ nav .menu-btn i {
   background-color: black;
   border-bottom: 1px solid #aa8740;
 }
-#article1{
+#article1 {
   height: 300px;
   width: 23%;
   border-radius: 50%;
   background-color: white;
   margin-top: 30px;
 }
-#article2{
+#article2 {
   height: 300px;
   width: 23%;
   border-radius: 50%;
   background-color: white;
   margin-top: 170px;
 }
-#article3{
+#article3 {
   height: 300px;
   width: 23%;
   border-radius: 50%;
   background-color: white;
   margin-top: 30px;
 }
-.subscribe{
+.subscribe {
   height: 200px;
   background-color: black;
   border-bottom: 1px solid #aa8740;
   text-align: center;
 }
-.subscribe h2{
+.subscribe h2 {
   padding: 25px 0px 15px 0px;
 }
-.emaill{
+.emaill {
   width: 40%;
   margin-left: 20px;
   border-radius: 14px;
@@ -243,7 +242,7 @@ nav .menu-btn i {
   background-color: #e3d7bd;
   border: 2px solid #aa8740;
 }
-#submit{
+#submit {
   background-color: #aa8740;
   padding: 10px;
   margin: 20px;
@@ -251,19 +250,19 @@ nav .menu-btn i {
   color: white;
   border: 2px solid #aa8740;
 }
-#submit:hover{
+#submit:hover {
   background-color: goldenrod;
-  transition: .3s;
+  transition: 0.3s;
   border: 2px solid goldenrod;
 }
-.reviews{
+.reviews {
   background-color: #aa8740;
   color: white;
   padding: 10px;
 }
-.reviews:hover{
+.reviews:hover {
   background-color: goldenrod;
-  transition: .3s;
+  transition: 0.3s;
 }
 @media (min-width: 940px) and (max-width: 1040px) {
   nav ul li a {
@@ -327,14 +326,14 @@ nav .menu-btn i {
 
 /* Footer */
 
-footer{
+footer {
   width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
   /* background: #111; */
 }
-footer .content{
+footer .content {
   max-width: 1350px;
   margin: auto;
   padding: 20px;
@@ -342,36 +341,36 @@ footer .content{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .content p,a{
+footer .content p,
+a {
   color: #fff !important;
 }
-footer .content .box{
+footer .content .box {
   width: 33%;
   transition: all 0.4s ease;
 }
-footer .content .topic{
+footer .content .topic {
   font-size: 22px;
   font-weight: 600;
   color: #aa8740;
   margin-bottom: 16px;
-
 }
-footer .content p{
+footer .content p {
   text-align: justify;
 }
-footer .content .lower .topic{
+footer .content .lower .topic {
   margin: 24px 0 5px 0;
 }
-footer .content .lower i{
+footer .content .lower i {
   padding-right: 16px;
 }
-footer .content .middle{
+footer .content .middle {
   padding-left: 80px;
 }
-footer .content .middle a{
+footer .content .middle a {
   line-height: 32px;
 }
-footer .content .right input[type="text"]{
+footer .content .right input[type="text"] {
   height: 45px;
   width: 100%;
   outline: none;
@@ -382,7 +381,7 @@ footer .content .right input[type="text"]{
   font-size: 17px;
   border: 2px solid #222222;
 }
-footer .content .right input[type="submit"]{
+footer .content .right input[type="submit"] {
   height: 42px;
   width: 100%;
   font-size: 18px;
@@ -396,11 +395,11 @@ footer .content .right input[type="submit"]{
   border: 2px solid #aa8740;
   transition: all 0.3s ease-in-out;
 }
-.content .right input[type="submit"]:hover{
+.content .right input[type="submit"]:hover {
   background: none;
-  color:  #e3d7bd;
+  color: #e3d7bd;
 }
-footer .content .media-icons a{
+footer .content .media-icons a {
   font-size: 16px;
   height: 45px;
   width: 45px;
@@ -412,46 +411,46 @@ footer .content .media-icons a{
   margin: 30px 0 0 0;
   transition: all 0.3s ease;
 }
-.content .media-icons a:hover{
+.content .media-icons a:hover {
   border-color: #aa8740;
 }
-footer .bottom{
+footer .bottom {
   width: 100%;
   text-align: center;
   color: #d9d9d9;
   padding: 20px 0 10px 0;
 }
-footer .bottom a{
+footer .bottom a {
   color: #aa8740;
 }
-footer a{
+footer a {
   transition: all 0.3s ease;
 }
-footer a:hover{
+footer a:hover {
   color: #aa8740 !important;
 }
-@media (max-width:1100px) {
-  footer .content .middle{
+@media (max-width: 1100px) {
+  footer .content .middle {
     padding-left: 50px;
   }
 }
-@media (max-width:950px){
-  footer .content .box{
+@media (max-width: 950px) {
+  footer .content .box {
     width: 50%;
   }
-  .content .right{
+  .content .right {
     margin-top: 40px;
   }
 }
-@media (max-width:560px){
-  footer{
+@media (max-width: 560px) {
+  footer {
     position: relative;
   }
-  footer .content .box{
+  footer .content .box {
     width: 100%;
     margin-top: 30px;
   }
-  footer .content .middle{
+  footer .content .middle {
     padding-left: 0;
   }
 }

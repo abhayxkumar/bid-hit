@@ -183,17 +183,16 @@
         <div id="article3"></div>
       </div>
 
-
       <!-- Updates Section -->
       <div class="subscribe">
         <h2>Subscribe for important updates</h2>
-          <input
-            type="email"
-            name="email"
-            class="emaill"
-            id="email"
-            placeholder="Enter your email address"
-          /><button id="submit">Subscribe</button>
+        <input
+          type="email"
+          name="email"
+          class="emaill"
+          id="email"
+          placeholder="Enter your email address"
+        /><button id="submit">Subscribe</button>
       </div>
 
       <!-- Footer -->
@@ -255,59 +254,62 @@
     ></script>
 
     <!-- Firebase Scripts -->
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyCwcXkAZoIfiQfc7iqAFpoa3-a5_cElLHg",
-      authDomain: "loginweb-34cad.firebaseapp.com",
-      databaseURL: "https://loginweb-34cad-default-rtdb.firebaseio.com",
-      projectId: "loginweb-34cad",
-      storageBucket: "loginweb-34cad.appspot.com",
-      messagingSenderId: "178607050995",
-      appId: "1:178607050995:web:0071ffb26a6c5e54236786",
-      measurementId: "G-K3XZRNGCK7"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-    import { getDatabase, ref, set, child, update, remove } 
-    from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCwcXkAZoIfiQfc7iqAFpoa3-a5_cElLHg",
+        authDomain: "loginweb-34cad.firebaseapp.com",
+        databaseURL: "https://loginweb-34cad-default-rtdb.firebaseio.com",
+        projectId: "loginweb-34cad",
+        storageBucket: "loginweb-34cad.appspot.com",
+        messagingSenderId: "178607050995",
+        appId: "1:178607050995:web:0071ffb26a6c5e54236786",
+        measurementId: "G-K3XZRNGCK7",
+      };
 
-    const db = getDatabase();
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
 
-    // Get a reference to the database service
-    var email = document.getElementById("email");
+      import {
+        getDatabase,
+        ref,
+        set,
+        child,
+        update,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
 
-    var submit = document.getElementById("submit");
+      const db = getDatabase();
 
-    // Insert Data Function
+      // Get a reference to the database service
+      var email = document.getElementById("email");
 
-    function insertData() {
-      set(ref(db, "Subscribe" + "/" + Date.now()), {
-        Email: email.value,
-      })
-      .then(()=>{
-        alert("You are subscribed to us for more updates!");
-      })
-      .catch(error=>{
-        alert("Error: " + error);
-      });
-    }
+      var submit = document.getElementById("submit");
 
-    // Assign Event Listener to the Submit Button
-    submit.addEventListener("click", insertData);
-    
+      // Insert Data Function
 
-  </script>
+      function insertData() {
+        set(ref(db, "Subscribe" + "/" + Date.now()), {
+          Email: email.value,
+        })
+          .then(() => {
+            alert("You are subscribed to us for more updates!");
+          })
+          .catch((error) => {
+            alert("Error: " + error);
+          });
+      }
 
+      // Assign Event Listener to the Submit Button
+      submit.addEventListener("click", insertData);
+    </script>
   </body>
 </html>

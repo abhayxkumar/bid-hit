@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 nav {
   height: 80px;
@@ -16,17 +16,17 @@ nav {
 }
 
 .main-container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .bid-hit {
-    color: #aa8740;
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding-left: 10px;
-  }
+  color: #aa8740;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
 
 .logo {
   display: flex;
@@ -216,14 +216,14 @@ button {
 
 /* Footer */
 
-footer{
+footer {
   width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
   background: #111;
 }
-footer .content{
+footer .content {
   max-width: 1350px;
   margin: auto;
   padding: 20px;
@@ -231,36 +231,36 @@ footer .content{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .content p,a{
+footer .content p,
+a {
   color: #fff !important;
 }
-footer .content .box{
+footer .content .box {
   width: 33%;
   transition: all 0.4s ease;
 }
-footer .content .topic{
+footer .content .topic {
   font-size: 22px;
   font-weight: 600;
   color: #aa8740;
   margin-bottom: 16px;
-
 }
-footer .content p{
+footer .content p {
   text-align: justify;
 }
-footer .content .lower .topic{
+footer .content .lower .topic {
   margin: 24px 0 5px 0;
 }
-footer .content .lower i{
+footer .content .lower i {
   padding-right: 16px;
 }
-footer .content .middle{
+footer .content .middle {
   padding-left: 80px;
 }
-footer .content .middle a{
+footer .content .middle a {
   line-height: 32px;
 }
-footer .content .right input[type="text"]{
+footer .content .right input[type="text"] {
   height: 45px;
   width: 100%;
   outline: none;
@@ -271,7 +271,7 @@ footer .content .right input[type="text"]{
   font-size: 17px;
   border: 2px solid #222222;
 }
-footer .content .right input[type="submit"]{
+footer .content .right input[type="submit"] {
   height: 42px;
   width: 100%;
   font-size: 18px;
@@ -285,11 +285,11 @@ footer .content .right input[type="submit"]{
   border: 2px solid #aa8740;
   transition: all 0.3s ease-in-out;
 }
-.content .right input[type="submit"]:hover{
+.content .right input[type="submit"]:hover {
   background: none;
-  color:  #e3d7bd;
+  color: #e3d7bd;
 }
-footer .content .media-icons a{
+footer .content .media-icons a {
   font-size: 16px;
   height: 45px;
   width: 45px;
@@ -301,10 +301,10 @@ footer .content .media-icons a{
   margin: 30px 0 0 0;
   transition: all 0.3s ease;
 }
-.content .media-icons a:hover{
+.content .media-icons a:hover {
   border-color: #aa8740;
 }
-footer .bottom{
+footer .bottom {
   width: 100%;
   text-align: center;
   color: #d9d9d9;
@@ -313,37 +313,37 @@ footer .bottom{
 .copyright {
   color: white;
 }
-footer .bottom a{
+footer .bottom a {
   color: #aa8740;
 }
-footer a{
+footer a {
   transition: all 0.3s ease;
 }
-footer a:hover{
+footer a:hover {
   color: #aa8740 !important;
 }
-@media (max-width:1100px) {
-  footer .content .middle{
+@media (max-width: 1100px) {
+  footer .content .middle {
     padding-left: 50px;
   }
 }
-@media (max-width:950px){
-  footer .content .box{
+@media (max-width: 950px) {
+  footer .content .box {
     width: 50%;
   }
-  .content .right{
+  .content .right {
     margin-top: 40px;
   }
 }
-@media (max-width:560px){
-  footer{
+@media (max-width: 560px) {
+  footer {
     position: relative;
   }
-  footer .content .box{
+  footer .content .box {
     width: 100%;
     margin-top: 30px;
   }
-  footer .content .middle{
+  footer .content .middle {
     padding-left: 0;
   }
 }

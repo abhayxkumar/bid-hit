@@ -263,11 +263,6 @@ footer a:hover {
     padding-left: 0;
   }
 }
-@media (max-width:1000px){
-  .input-group{
-    margin-top: 0;
-  }
-}
 /* SignUp */
 
 /* .background{
