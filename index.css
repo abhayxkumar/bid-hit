@@ -51,6 +51,13 @@ nav {
   justify-content: space-between;
   padding: 0px 50px 0px 20px;
   border-bottom: 1px solid #aa8740;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.carousel-inner {
+  margin-top: 80px;
 }
 
 .logo {

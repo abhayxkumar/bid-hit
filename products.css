@@ -7,7 +7,7 @@
   }
 
 body {
-  background-color: black;
+  background-color: black !important;
 }
 
 nav {
@@ -259,4 +259,17 @@ footer a:hover{
   footer .content .middle{
     padding-left: 0;
   }
+}
+
+/* Card */
+
+.card {
+  background-color: black !important;
+  color: #aa8740;
+}
+
+.btn {
+  background-color: #aa8740 !important;
+  color: white !important;
+  border-color: #aa8740 !important;
 }
