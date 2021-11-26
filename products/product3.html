@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bid-Hit | Search Auction</title>
-    <link rel="stylesheet" href="product3.css">
+    <title>Bid-Hit | Product 3</title>
+    <link rel="stylesheet" href="product1234.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
@@ -18,10 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
     <div class="back">
         <nav>
           <div class="logo">
-            <a href="./index.html"><img src="./image/logo.png" alt="Logo" /></a>
+            <a href="./index.html"><img src="/image/logo.png" alt="Logo" /></a>
             <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
           </div>
           <input type="checkbox" id="click" />
@@ -29,14 +31,52 @@
             <i class="fas fa-bars"></i>
           </label>
           <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a class="active" href="./products.html">PRODUCTS</a></li>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a class="active" href="/products.html">PRODUCTS</a></li>
             <li><a href="tnc.html">T & C</a></li>
-            <li><a href="./aboutus.html">ABOUT US</a></li>
-            <li><a href="./contactus.html">CONTACT US</a></li>
-            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/contactus.html">CONTACT US</a></li>
+            <li><a href="/login.html">LOGIN</a></li>
           </ul>
         </nav>
+
+        <!-- Product Details -->
+        <div class="main-container">
+
+          <div class="left-container">
+            <div class="img-container">
+              <img class="product-img" src="/image/product3.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="right-container">
+            <div class="product-details">
+              <h2 class="product-name">Antique Wooden Kerala Box</h2>
+              <hr>
+              <h3 class="desc-heading">Decription</h3>
+              <p class="product-desc">
+                This is very rarely finding Antique Wooden Kerala Box With Antique Brass decoration. Made of single piece of teak wood ancient Carpenters in Kerala. Must be 100-150 years old. It has wonderful traditional Kerala design on top. The piece in good condition without any damage.
+                <br><br>
+                This kind of boxes were commonly used till early 19th century. This is the one of the great example of artistic talent of the ancient Kerala craftsmen.This boxes seems in different model in different locations of Kerala . In this boxes they used to carry their daily usage stuffs like bunch of keys, coins, chewing pans, perfumes, some special spices etc. This usually find in woods like teak, Rose wood and Jack wood.
+                <br><br>
+                The box made out of single piece of wood have great demands in antique lovers across the world. In ancient times they wanted this to be look better than others and they spent any money to make the Tortoise box attractive. That is the reason why you can see nice brass decoration in these boxes.
+                <br><br>
+                Care Instruction: Clean it with a soft damp cloth
+              </p>
+              <p class="product-desc">The colors you see in the images may slightly vary from the product due the fact that every screen has a different color resolution.</p>
+              <hr>
+              <br>
+              <p class="price">Base Price: <span class="base-price">Rs. 26202.75</span></p>
+              <br>
+              <p class="price">Last Bid Price: <input id="last-bid" class="ipt" type="number" readonly></input> </p>
+              <br>
+              <label class="price">Bid Price: </label>
+              <input class="ipt" type="number" name="bid-price" id="bid-price" placeholder="Enter your bid amount">
+              <button onclick="window.location.reload();" class="btn" id="submit">Bid Now</button>
+            </div>
+          </div>
+
+        </div>
 
         <!-- Footer -->
         <footer>
@@ -62,12 +102,12 @@
             </div>
             <div class="middle box">
               <div class="topic">Discover</div>
-              <div><a href="./aboutus.html">About Us</a></div>
-              <div><a href="./contactus.html">Contact Us</a></div>
-              <div><a href="./products.html">Products</a></div>
-              <div><a href="./search.html">Search Auction</a></div>
-              <div><a href="./tnc.html">T & C</a></div>
-              <div><a href="./login.html">Login</a></div>
+              <div><a href="/aboutus.html">About Us</a></div>
+              <div><a href="/contactus.html">Contact Us</a></div>
+              <div><a href="/products.html">Products</a></div>
+              <div><a href="/search.html">Search Auction</a></div>
+              <div><a href="/tnc.html">T & C</a></div>
+              <div><a href="/login.html">Login</a></div>
             </div>
             <div class="right box">
               <div class="topic">Social Media</div>
@@ -84,9 +124,81 @@
             <p>Copyright © 2021 <a href="#">Bid-Hit</a> All rights reserved</p>
           </div>
         </footer>
-
-
     </div>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCwcXkAZoIfiQfc7iqAFpoa3-a5_cElLHg",
+        authDomain: "loginweb-34cad.firebaseapp.com",
+        databaseURL: "https://loginweb-34cad-default-rtdb.firebaseio.com",
+        projectId: "loginweb-34cad",
+        storageBucket: "loginweb-34cad.appspot.com",
+        messagingSenderId: "178607050995",
+        appId: "1:178607050995:web:0071ffb26a6c5e54236786",
+        measurementId: "G-K3XZRNGCK7",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      import {
+        getDatabase,
+        ref,
+        set,
+        get,
+        child,
+        update,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
+
+      const db = getDatabase();
+
+      // Get a reference to the database service
+      var bid_price = document.getElementById("bid-price");
+      var submit = document.getElementById("submit");
+      var last_bid = document.getElementById("last-bid");
+
+      //Select Data Function
+      function SelectData() {
+        const dbref = ref(db);
+
+        get(child(dbref, "Products" + "/" + "Product-3")).then((snapshot) => {
+          if(snapshot.exists()){
+            last_bid.value = snapshot.val().BidPrice;
+          }
+          else{
+            last_bid.value = "No Bid Yet";
+          }
+          })
+          .catch((error) => {
+            alert("Error: " + error);
+          });
+      }
+
+      // Insert Data Function
+      function insertData() {
+        set(ref(db, "Products" + "/" + "Product-3"), {
+          BidPrice: bid_price.value,
+        })
+          .then(() => {
+            alert("Bid Successfull");
+          })
+          .catch((error) => {
+            alert("Error: " + error);
+          });
+      }
+      
+      // Assign Event Listener to the Submit Button
+      submit.addEventListener("click", SelectData);
+      submit.addEventListener("click", insertData);
+      window.onload = function () {
+        SelectData();
+      };
+    </script>
 
 </body>
 </html>
