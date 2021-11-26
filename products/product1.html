@@ -66,7 +66,7 @@
               <button onclick="window.location.reload();" class="btn" id="submit">Bid Now</button>
 
               <!-- Clock -->
-              <h1>Time Left!</h1>
+              <h1 class="clock-h1" id="clock-heading">Time Left!</h1>
 <div id="clockdiv">
   <div>
     <span class="days"></span>
@@ -229,6 +229,7 @@
         alert("Bidding is closed");
         document.getElementById("submit").disabled = true;
         document.getElementById("clockdiv").style.display="none";
+        document.getElementById("clock-heading").style.display="none";
       }
 
       //clock

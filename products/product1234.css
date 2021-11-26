@@ -411,7 +411,7 @@ hr {
 }
 
 /* Clock */
-h1{
+.clock-h1 {
   color: #aa8740;
   font-weight: 100;
   font-size: 40px;
