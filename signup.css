@@ -9,7 +9,8 @@
 }
 
 body {
-  background-image: url(./image/background.jpg);
+  /* background-image: url(./image/background.jpg); */
+  background-color: #080710;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -265,7 +266,7 @@ footer a:hover {
 }
 /* SignUp */
 
-/* .background{
+.background{
   
     width: 430px;
     height: 520px;
@@ -296,7 +297,7 @@ footer a:hover {
     );
     right: -30px;
     bottom: -80px;
-} */
+} 
 
 .input-group {
   height: 490px;
