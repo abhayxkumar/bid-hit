@@ -229,10 +229,12 @@ nav .menu-btn i {
   height: 200px;
   background-color: black;
   border-bottom: 1px solid #aa8740;
+  border-top: #aa8740 solid 1px;
   text-align: center;
 }
 .subscribe h2 {
   padding: 25px 0px 15px 0px;
+  
 }
 .emaill {
   width: 40%;
@@ -326,14 +328,15 @@ nav .menu-btn i {
 
 /* Footer */
 
-footer {
+/* Footer */
+
+footer{
   width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
-  /* background: #111; */
 }
-footer .content {
+footer .content{
   max-width: 1350px;
   margin: auto;
   padding: 20px;
@@ -341,36 +344,36 @@ footer .content {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .content p,
-a {
+footer .content p,a{
   color: #fff !important;
 }
-footer .content .box {
+footer .content .box{
   width: 33%;
   transition: all 0.4s ease;
 }
-footer .content .topic {
+footer .content .topic{
   font-size: 22px;
   font-weight: 600;
   color: #aa8740;
   margin-bottom: 16px;
+
 }
-footer .content p {
+footer .content p{
   text-align: justify;
 }
-footer .content .lower .topic {
+footer .content .lower .topic{
   margin: 24px 0 5px 0;
 }
-footer .content .lower i {
+footer .content .lower i{
   padding-right: 16px;
 }
-footer .content .middle {
+footer .content .middle{
   padding-left: 80px;
 }
-footer .content .middle a {
+footer .content .middle a{
   line-height: 32px;
 }
-footer .content .right input[type="text"] {
+footer .content .right input[type="text"]{
   height: 45px;
   width: 100%;
   outline: none;
@@ -381,7 +384,7 @@ footer .content .right input[type="text"] {
   font-size: 17px;
   border: 2px solid #222222;
 }
-footer .content .right input[type="submit"] {
+footer .content .right input[type="submit"]{
   height: 42px;
   width: 100%;
   font-size: 18px;
@@ -395,11 +398,11 @@ footer .content .right input[type="submit"] {
   border: 2px solid #aa8740;
   transition: all 0.3s ease-in-out;
 }
-.content .right input[type="submit"]:hover {
+.content .right input[type="submit"]:hover{
   background: none;
-  color: #e3d7bd;
+  color:  #e3d7bd;
 }
-footer .content .media-icons a {
+footer .content .media-icons a{
   font-size: 16px;
   height: 45px;
   width: 45px;
@@ -411,46 +414,114 @@ footer .content .media-icons a {
   margin: 30px 0 0 0;
   transition: all 0.3s ease;
 }
-.content .media-icons a:hover {
+.content .media-icons a:hover{
   border-color: #aa8740;
 }
-footer .bottom {
+footer .bottom{
   width: 100%;
   text-align: center;
   color: #d9d9d9;
   padding: 20px 0 10px 0;
 }
-footer .bottom a {
+footer .bottom a{
   color: #aa8740;
 }
-footer a {
+footer a{
   transition: all 0.3s ease;
 }
-footer a:hover {
+footer a:hover{
   color: #aa8740 !important;
 }
-@media (max-width: 1100px) {
-  footer .content .middle {
+@media (max-width:1100px) {
+  footer .content .middle{
     padding-left: 50px;
   }
 }
-@media (max-width: 950px) {
-  footer .content .box {
+@media (max-width:950px){
+  footer .content .box{
     width: 50%;
   }
-  .content .right {
+  .content .right{
     margin-top: 40px;
   }
 }
-@media (max-width: 560px) {
-  footer {
+@media (max-width:560px){
+  footer{
     position: relative;
   }
-  footer .content .box {
+  footer .content .box{
     width: 100%;
     margin-top: 30px;
   }
-  footer .content .middle {
+  footer .content .middle{
     padding-left: 0;
+  }
+}
+
+/* Review Section */
+
+@media (max-width: 940px) {
+  .review-heading {
+    font-size:20px !important;
+    margin: 20px 10px !important;
+  }
+
+  .left {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  ul {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  li {
+    font-size: 15px !important;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 10px !important;
+  }
+
+  .row {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .reviews {
+    border-radius: 20px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+
+  .review-photo {
+    width: 35%;
+    height: auto;
+    margin: 0 0 0 120px;
+  }
+
+  .subscribe-heading {
+    padding-top: 0 !important;
+    font-size: 20px;
+  }  
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: #aa8740 solid 1px;
+    padding-top: 20px;
+  }
+  .emaill {
+    width: 90%;
+    margin: 0 10px !important;
+  }
+  .subscribe-btn {
+    width: 50%;
+    margin: 10px !important;
   }
 }
