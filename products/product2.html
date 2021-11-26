@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bid-Hit | Search Auction</title>
-    <link rel="stylesheet" href="product2.css">
+    <title>Bid-Hit | Product 2</title>
+    <link rel="stylesheet" href="product1234.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
@@ -19,24 +19,78 @@
 </head>
 <body>
     <div class="back">
+      <!-- Header -->
         <nav>
           <div class="logo">
-            <a href="./index.html"><img src="./image/logo.png" alt="Logo" /></a>
-            <a href="./index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
+            <a href="/index.html"><img src="/image/logo.png" alt="Logo" /></a>
+            <a href="/index.html"><h1 class="bid-hit">Bid-Hit</h1></a>
           </div>
           <input type="checkbox" id="click" />
           <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
           </label>
           <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a class="active" href="./products.html">PRODUCTS</a></li>
-            <li><a href="tnc.html">T & C</a></li>
-            <li><a href="./aboutus.html">ABOUT US</a></li>
-            <li><a href="./contactus.html">CONTACT US</a></li>
-            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a class="active" href="/products.html">PRODUCTS</a></li>
+            <li><a href="/tnc.html">T & C</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/contactus.html">CONTACT US</a></li>
+            <li><a href="/login.html">LOGIN</a></li>
           </ul>
         </nav>
+
+        <!-- Product Details -->
+        <div class="main-container">
+
+          <div class="left-container">
+            <div class="img-container">
+              <img class="product-img" src="/image/product2.png" alt="">
+            </div>
+          </div>
+
+          <div class="right-container">
+            <div class="product-details">
+              <h2 class="product-name">Chhatrapati Shivaji Maharaj Bust Sculpture</h2>
+              <hr>
+              <h3 class="desc-heading">Decription</h3>
+              <p class="product-desc">One of the bravest, progressive, and most sensible rulers of India, Chhatrapati Shivaji. Shivaji established a competent and progressive civil rule with well-structured administrative organizations and was the founder of the Maratha Empire. Shivaji's achievements in administration and various aspects of governance were considered to be the beginning of modern nation-building. Shivaji's Valour, leadership, and warfare strategies will always occupy an important position in the annals of history. <br><br> Care Instruction: Clean it with a soft damp cloth</p>
+              <p class="product-desc">The colors you see in the images may slightly vary from the product due the fact that every screen has a different color resolution.</p>
+              <hr>
+              <br>
+              <p class="price">Base Price: <span class="base-price">Rs. 3,499.00</span></p>
+              <br>
+              <p class="price">Last Bid Price: <input id="last-bid" class="ipt" type="number" readonly></input> </p>
+              <br>
+              <label class="price">Bid Price: </label>
+              <input class="ipt" type="number" name="bid-price" id="bid-price" placeholder="Enter your bid amount">
+              <button onclick="window.location.reload();" class="btn" id="submit">Bid Now</button>
+            <!-- Clock -->
+            <h1>Time Left!</h1>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+
+
+
+        </div>
 
         <!-- Footer -->
         <footer>
@@ -64,7 +118,7 @@
               <div class="topic">Discover</div>
               <div><a href="./aboutus.html">About Us</a></div>
               <div><a href="./contactus.html">Contact Us</a></div>
-              <div><a href="./products.html">Products</a></div>
+              <div><a href="/products.html">Products</a></div>
               <div><a href="./search.html">Search Auction</a></div>
               <div><a href="./tnc.html">T & C</a></div>
               <div><a href="./login.html">Login</a></div>
@@ -84,9 +138,143 @@
             <p>Copyright © 2021 <a href="#">Bid-Hit</a> All rights reserved</p>
           </div>
         </footer>
-
-
     </div>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCwcXkAZoIfiQfc7iqAFpoa3-a5_cElLHg",
+        authDomain: "loginweb-34cad.firebaseapp.com",
+        databaseURL: "https://loginweb-34cad-default-rtdb.firebaseio.com",
+        projectId: "loginweb-34cad",
+        storageBucket: "loginweb-34cad.appspot.com",
+        messagingSenderId: "178607050995",
+        appId: "1:178607050995:web:0071ffb26a6c5e54236786",
+        measurementId: "G-K3XZRNGCK7",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      import {
+        getDatabase,
+        ref,
+        set,
+        get,
+        child,
+        update,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
+
+      const db = getDatabase();
+
+      // Get a reference to the database service
+      var bid_price = document.getElementById("bid-price");
+      var submit = document.getElementById("submit");
+      var last_bid = document.getElementById("last-bid");
+
+      //Select Data Function
+      function SelectData() {
+        const dbref = ref(db);
+
+        get(child(dbref, "Products" + "/" + "Product-2")).then((snapshot) => {
+          if(snapshot.exists()){
+            last_bid.value = snapshot.val().BidPrice;
+          }
+          else{
+            last_bid.value = "No Bid Yet";
+          }
+          })
+          .catch((error) => {
+            alert("Error: " + error);
+          });
+      }
+
+      // Insert Data Function
+      function insertData() {
+        set(ref(db, "Products" + "/" + "Product-2"), {
+          BidPrice: bid_price.value,
+        })
+          .then(() => {
+            alert("Bid Successfull");
+          })
+          .catch((error) => {
+            alert("Error: " + error);
+          });
+      }
+      
+      // Assign Event Listener to the Submit Button
+      submit.addEventListener("click", SelectData);
+      submit.addEventListener("click", insertData);
+      window.onload = function () {
+        SelectData();
+      };
+
+      const d = new Date();
+      let UTC_hours = d.getUTCHours();
+      let UTC_minutes = d.getUTCMinutes();
+      let IND_hours = UTC_hours + 5;
+      let UTC_time = (UTC_hours+5) + ":" + (UTC_minutes+30);
+
+      if(IND_hours > 18 && IND_hours < 22){
+        alert("Bidding is open");
+        document.getElementById("submit").disabled = false;
+        // document.getElementById("clockdiv").disabled = false;
+        initializeClock('clockdiv', UTC_time);
+      }
+      else{
+        alert("Bidding is closed");
+        document.getElementById("submit").disabled = true;
+        document.getElementById("clockdiv").style.display="none";
+      }
+
+      //clock
+      function getTimeRemaining(endtime) {
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const seconds = Math.floor((total / 1000) % 60);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  const clock = document.getElementById(id);
+  const daysSpan = clock.querySelector('.days');
+  const hoursSpan = clock.querySelector('.hours');
+  const minutesSpan = clock.querySelector('.minutes');
+  const secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    const t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  const timeinterval = setInterval(updateClock, 1000);
+}
+
+const deadline = new Date(Date.parse(new Date()) + 4 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+    </script>
 
 </body>
 </html>
