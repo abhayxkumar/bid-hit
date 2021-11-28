@@ -145,6 +145,12 @@ h3 {
   margin: 10px 0;
 }
 
+@media (max-width: 940px) {
+  main {
+    margin: 50px 20px;
+  }
+}
+
 /* Footer */
 
 footer {
