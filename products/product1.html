@@ -219,11 +219,11 @@
       let IND_hours = UTC_hours + 5;
       let UTC_time = (UTC_hours+5) + ":" + (UTC_minutes+30);
 
-      if(IND_hours > 14 && IND_hours < 18){
+      if(IND_hours > 13 && IND_hours < 17){
         alert("Bidding is open");
         document.getElementById("submit").disabled = false;
         // document.getElementById("clockdiv").disabled = false;
-        initializeClock('clockdiv', UTC_time);
+        initializeClock('clockdiv', IND_hours);
       }
       else{
         alert("Bidding is closed");
